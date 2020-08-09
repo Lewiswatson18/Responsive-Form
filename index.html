@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Gayathri:wght@100;400;700&family=Lato&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>THE CODE REVIEW</title>
+    </head>
+
+    <body>
+        <div id="container">
+        <header>
+            <h1 class="intro">THE CODE REVIEW</h1>
+        </header>
+
+            <div>
+                <H2>Signup for our newsletter</H2>
+                <p class="intro-p">Get the lates news on how your code is doing right in your inbox</p>
+               
+                <hr class="line-1">
+                <hr class="line-2">
+            </div>
+
+            <main>
+                <!--==== basic information "section-1" ====-->
+            
+            
+                <form method="post" action="index.html">
+                    <fieldset>
+                       
+                    <legend><span class="contact-info"><strong>Contact Information</strong></span></legend>
+                    
+                <div class="contact-form">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="user-name" placeholder="required" required>
+                </div>
+                
+                <div class="contact-form">
+                    <label for="email-address">Email Adress</label>
+                    <input type="email" id="email-address" name="user-address" placeholder="required" required>
+                </div>
+
+                <div class="contact-form">
+                    <label for="phone-number">Phone Number</label>
+                    <input type="tel" id="phone-number" name="number" placeholder="optional">
+                </div>
+
+                <div class="contact-form">
+                    <label for="street-address">Street Address</label>
+                    <input type="text" id="street-address" name="address" placeholder="required">
+                </div>
+
+                <div class="contact-form">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="user-city" placeholder="optional">
+                </div>
+
+                 <div class="contact-form">    
+                    <label for="Country">Country</label>
+                    <select id="state" name="Country">
+                        <option value="">Choose Country</option>
+                        <optgroup label="Select A Country">    
+                        <option value="ENG">England</option>
+                        <option value="SCT">Scotland</option>
+                        <option value="WA">Wales</option>
+                        <option value="NI">Northern Ireland</option>
+                    </optgroup>
+                    
+                   
+
+                    </select>
+                </div>
+                  
+                <div class="contact-form-code">
+                        <label for="Postcode">Post Code</label>
+                        <input type="text" id="zip" name="user-zip-code" placeholder="Postcode">
+                       
+                </div>
+                <hr class="line-3">
+                    </fieldset>
+               
+                   
+            
+            <!--==== newsletter "section-2" ====-->
+            
+            <fieldset>
+                
+                <legend><strong>Newsletter</strong></legend>
+                <p class="news">Select the newsletters you would like to recieve</p>
+           
+                <input type="checkbox" name="newsletter" id="html-news"><label for="html-news">HTML News</label><br>
+                <input type="checkbox" name="newsletter" id="css-news"><label for="css-news">CSS News</label><br>
+                <input type="checkbox" name="newsletter" id="javascript-news"><label for="javascript-news">Javascript News</label>
+                <p>Newsletter format</p>
+                <input type="radio" name="newsletter-format" id="html"><label for="html">HTML</label><br>
+                <input type="radio" name="newsletter-format" id="plain-text"><label for="plain-text">Plain text</label>
+
+                <label for="comment" class="textarea">Other topics you'd like to hear about</label>
+                
+                <textarea id="comment" name="user-comment"></textarea>
+                
+           
+            </fieldset>
+
+            <button type="submit" class="button">Sign Up</button>
+            
+
+                </form>
+        </main>
+
+        <footer><em>Copyright The Code Review</em></footer>
+    </div>
+    </body>
+
+</html>
